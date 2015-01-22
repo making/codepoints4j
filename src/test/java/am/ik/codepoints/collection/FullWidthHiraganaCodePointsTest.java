@@ -59,21 +59,6 @@ public class FullWidthHiraganaCodePointsTest {
     public void testContainsAny_FullWidthHiraganaAndFullWidthKatakana() throws Exception {
         CodePoints cp = CodePointsHolder.get(FullWidthHiraganaCodePoints.class);
         assertThat(cp.containsAny("あいうえおカキクケコ"), is(true));
-
-        System.out.println(new String(new int[] {0x3093}, 0, 1));
-        System.out.println(new String(new int[] {0x3094}, 0, 1));
-        System.out.println(new String(new int[] {0x3095}, 0, 1));
-        System.out.println(new String(new int[] {0x3096}, 0, 1));
-        System.out.println(new String(new int[] {0x3097}, 0, 1));
-        System.out.println(new String(new int[] {0x3098}, 0, 1));
-        System.out.println(new String(new int[] {0x3099}, 0, 1));
-        System.out.println(new String(new int[] {0x3100}, 0, 1));
-        System.out.println(new String(new int[] {0x3101}, 0, 1));
-        System.out.println(new String(new int[] {0x3102}, 0, 1));
-        System.out.println(new String(new int[] {0x3103}, 0, 1));
-        System.out.println(new String(new int[] {0x3104}, 0, 1));
-        System.out.println(new String(new int[] {0x3105}, 0, 1));
-        System.out.println(new String(new int[] {0x3106}, 0, 1));
     }
 
     @Test
