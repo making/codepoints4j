@@ -6,9 +6,9 @@ import am.ik.codepoints.CodePoints;
 /**
  * JIS X 208 4区
  */
-public final class 全角ひらがなコードポイント集 extends CodePoints.Wrapper {
+public final class FullWidthHiraganaCodePoints extends CodePoints.Wrapper {
 
-    public 全角ひらがなコードポイント集() {
+    public FullWidthHiraganaCodePoints() {
         super(0x3041 /*ぁ*/,
                 0x3042 /*あ*/,
                 0x3043 /*ぃ*/,

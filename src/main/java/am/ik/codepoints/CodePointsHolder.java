@@ -6,12 +6,13 @@ import java.util.concurrent.ConcurrentMap;
 public class CodePointsHolder {
     private static final ConcurrentMap<Class<? extends CodePoints>, CodePoints> map = new ConcurrentHashMap<>();
 
-    public static CodePoints get(Class<? extends CodePoints> clazz) {
+    @SuppressWarnings("unchecked")
+    public static <T extends CodePoints> T get(Class<T> clazz) {
         if (map.containsKey(clazz)) {
-            return map.get(clazz);
+            return (T) map.get(clazz);
         }
         try {
-            CodePoints codePoints = clazz.newInstance();
+            T codePoints = clazz.newInstance();
             map.put(clazz, codePoints);
             return codePoints;
         } catch (InstantiationException e) {

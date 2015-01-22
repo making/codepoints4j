@@ -6,9 +6,9 @@ import am.ik.codepoints.CodePoints;
 /**
  * JIS X 208 5区
  */
-public final class 全角カタカナコードポイント集 extends CodePoints.Wrapper {
+public final class FullWidthKatakanaCodePoints extends CodePoints.Wrapper {
 
-    public 全角カタカナコードポイント集() {
+    public FullWidthKatakanaCodePoints() {
         super(0x30A1 /*ァ*/,
                 0x30A2 /*ア*/,
                 0x30A3 /*ィ*/,
